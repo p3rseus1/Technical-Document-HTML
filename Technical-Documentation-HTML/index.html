@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Technical Documentation - HTML (pt-BR)</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <header>
+          <h2>Introducao a HTML</h2>
+        </header>
+        <ul>
+          <li><a class="nav-link" href="#Introducao">Introducao</a></li>
+          <li>
+            <a class="nav-link" href="#Como_funciona_a_internet"
+              >Como funciona a internet</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Estrutura_basica_de_um_documento_HTML"
+              >Estrutura basica de um documento HTML</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Seu_primeiro_Hello_World"
+              >Seu primeiro Hello World</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Titulos_e_paragrafos"
+              >Titulos e paragrafos</a
+            >
+          </li>
+          <li><a class="nav-link" href="#Links">Links</a></li>
+          <li><a class="nav-link" href="#Imagens">Imagens</a></li>
+          <li>
+            <a class="nav-link" href="#Formulario_-_Input"
+              >Formulario - Input</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Formulario_-_Checkbox"
+              >Formulario - Checkbox</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Formulario_-_Radio"
+              >Formulario - Radio</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introducao">
+        <header>
+          <h3>Introducao</h3>
+        </header>
+        <article>
+          <p>
+            Nessa documentação, iremos passar para você como funciona a criação
+            de um site. Como é a sua estrutura e algumas tags básicas
+          </p>
+          <p>
+            Esperamos que com isso, você possa desenvolver cada vez mais suas
+            habilidades para o desenvolvimento WEB. Boa leitura!
+          </p>
+          <p>
+            O <abbr title="Hypertext Markup Language">HTML</abbr> é uma
+            linguagem de marcação usada pelos os navegadores para fazer a
+            estrutura de um site. Junto com o
+            <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript, ele
+            formam um grupo poderoso para a criação de um Web Site.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Como_funciona_a_internet">
+        <header>
+          <h3>Como funciona a internet</h3>
+        </header>
+        <article>
+          <p>
+            A internet foi uma das maiores invenções da humanidade. Mas você
+            sabe como funciona?
+          </p>
+          <ul>
+            <li>
+              Basicamente, o cliente, no caso você e seu computador, requisita
+              uma página no seu navegador escrevendo o site na barra de
+              navegação.
+            </li>
+            <li>
+              Essa requisição primeiro vai para um servidor
+              <abbr title="Domain Name System">DNS</abbr>, que é reponsável por
+              achar o real endereço desse site (um endereço
+              <abbr title="Internet Protocol">IP</abbr>).
+            </li>
+            <li>
+              Quando é encontrado esse real endereço, a sua requisição é enviada
+              para um servidor WEB, que manda o site que você quer acessar.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Estrutura_basica_de_um_documento_HTML">
+        <header>
+          <h3>Estrutura basica de um documento HTML</h3>
+        </header>
+        <article>
+          <p>
+            A estrutura de um site HTML é feito de maneira hieráquica, com uma
+            tag dentro de outra.
+          </p>
+          <p>A estrutura básica seria feita da seguinte maneira:</p>
+          <ul>
+            <li>
+              DOCTYPE html: essa tag determina para um browser qual é o tipo de
+              documento que ela é.
+            </li>
+            <li>HTML: essa tag é onde fica o que esse browser irá ler.</li>
+            <li>
+              Head: fica algumas informações básicas do documento. Ex.: link
+              para a estilização, a linguagem usada, tags para otimização de
+              <abbr title="Search Engine Optimization">SEO</abbr>, e outros.
+            </li>
+            <li>
+              Body: é onde fica a estrutura do seu site, como textos, imagens,
+              links e etc.
+            </li>
+          </ul>
+          <p>Um exemplo prático de uma estrutura HTML:</p>
+          <div id="ex_doc-html">
+            <code>
+              <pre>
+            &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Título da página&lt;/title&gt;
+                    &lt;meta charset="utf-8"/&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                &lt;/body&gt;
+              &lt;/html&gt;</pre
+              >
+            </code>
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="Seu_primeiro_Hello_World">
+        <header>
+          <h3>Seu primeiro Hello world</h3>
+        </header>
+        <article>
+          <p>
+            O primeiro "Hello, world!" ou "Olá, mundo!" na vida de um
+            programador, é inesquecível. É lá onde nos temos um entusiasmo para
+            seguirmos.
+          </p>
+          <p>
+            No código a seguir, iremos te ensinar como fazer o seu primeiro
+            "Hello, world!". Não se preocupe com a tag dentro do <i>body</i>,
+            iremos te ensinar no decorrer do documento.
+          </p>
+          <div id="ex_hello">
+            <code>
+              <pre>
+              &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                  &lt;head&gt;
+                      &lt;title&gt;Título da página&lt;/title&gt;
+                      &lt;meta charset="utf-8"/&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;h1&gt;
+                      Hello, world!
+                    &lt;/h1&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;</pre
+              >
+            </code>
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="Titulos_e_paragrafos">
+        <header>
+          <h3>Titulos e paragrafos</h3>
+        </header>
+        <article>
+          <p>Iremos te ensinar a fazer um texto básico.</p>
+          <p>
+            Começaremos com os títulos. A Tag de título possui 6 tipos, e quanto
+            maior o seu número, menor a sua importância.
+          </p>
+          <p>
+            No exemplo a seguir, será mostrado as tags de acordo com esse
+            exemplo:
+            <strong>&lt;h1&gt;</strong>Teste!<strong>&lt;/h1&gt;</strong>,
+            <strong>&lt;h2&gt;</strong>Teste!<strong>&lt;/h2&gt;</strong>,
+            <strong>&lt;h3&gt;</strong>Teste!<strong>&lt;/h3&gt;</strong>,
+            <strong>&lt;h4&gt;</strong>Teste!<strong>&lt;/h4&gt;</strong>,
+            <strong>&lt;h5&gt;</strong>Teste!<strong>&lt;/h5&gt;</strong>,
+            <strong>&lt;h6&gt;</strong>Teste!<strong>&lt;/h6&gt;</strong> :
+          </p>
+          <div id="ex_h-tag">
+            <h1>Teste!</h1>
+            <h2>Teste!</h2>
+            <h3>Teste!</h3>
+            <h4>Teste!</h4>
+            <h5>Teste!</h5>
+            <h6>Teste!</h6>
+          </div>
+          <p>
+            Já os parágrafos são mais simples, usando apenas uma tag:
+            <strong>&lt;p&gt;</strong>Teste!<strong>&lt;/p&gt;</strong>. Um
+            exemplo de como é na prática:
+          </p>
+          <div id="ex_p-tag">
+            <p>Teste!</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="Links">
+        <header>
+          <h3>Links</h3>
+        </header>
+        <article>
+          <p>
+            Os links são bastante utilizados nos sites. Ele é responsável por te
+            levar para outra página.
+          </p>
+          <p>
+            A tag do link é:
+            <strong>&lt;a href="" &gt;</strong
+            >Teste!<strong>&lt;/a&gt;</strong>. O "href" é responsável para
+            saber qual site você irá, caso você clique nele. A seguir, um
+            exemplo de como fica essa tag em um site:
+          </p>
+          <div id="ex_link">
+            <a href="#">Teste de um link!</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="Imagens">
+        <header>
+          <h2>Imagens</h2>
+        </header>
+        <article>
+          <p>Outra coisa bastante utilizada em sites, são as imagens.</p>
+          <p>
+            A tag de uma imagem é:
+            <strong>&lt;img src="" &gt;</strong
+            >Teste!<strong>&lt;/a&gt;</strong>. O "src" é o caminho para onde o
+            documento HTML pode procurar a imagem. Pode ser usado tanto
+            localmente, como utilizando um link de um site externo.
+          </p>
+          <p>Esse é um exemplo do uso da tag usando uma imagem da internet:</p>
+          <div id="ex_images">
+            <img
+              id="image_html"
+              src="https://professor-falken.com/wp-content/uploads/2017/07/Como-redirigir-o-redireccionar-a-otra-pagina-web-en-HTML-professor-falken.com_.jpg"
+              alt="HTML logo's"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="Formulario_-_Input">
+        <header>
+          <h3>Formulario - Input</h3>
+        </header>
+        <article>
+          <p>
+            O <i>input</i> é utilizado para o usuário inserir dados em um
+            formulário. A tag é escrita da seguinte forma:
+            <strong>&lt;input type=""&gt;</strong>. O <i>type</i> é o tipo de
+            dados que a tag irá receber.
+          </p>
+          <p>
+            O input ficaria da seguinte forma: Obs: iremos usar o tipo de dado
+            texto ("type="text"):
+          </p>
+          <div id="ex_input">
+            <code
+              ><label for="ex">Nome:</label>
+              <input type="text" id="nome" placeholder="Digite o seu nome"
+            /></code>
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="Formulario_-_Checkbox">
+        <header>
+          <h3>Formulario - Checkbox</h3>
+        </header>
+        <article>
+          <p>
+            O input do tipo <i>Checkbox</i> é usado para marcar uma ou mais
+            opções em um formulário. O exemplo de uma <i>checkbox</i> seria:
+          </p>
+          <div id="ex_checkbox">
+            <code>
+              <pre>
+              &lt;legend&gt;Interesses de Estudo 2&lt;/legend&gt; 
+              &lt;label for="vendas">Vendas&lt;/label&gt; 
+              &lt;input type="checkbox" name="interesses3" value="1" id="vendas"&gt; 
+              &lt;label for="marketing">Marketing&lt;/label&gt; 
+              &lt;input type="checkbox" name="interesses3" value="2" id="marketing"&gt;
+            </pre
+              >
+            </code>
+          </div>
+          <p>O código a cima, ficaria dessa forma no Browser:</p>
+          <div id="ex_code-checkbox">
+            <legend>Interesses de Estudo 2</legend>
+            <label for="41">Vendas</label>
+            <input type="checkbox" name="interesses3" value="1" id="41" />
+            <label for="42">Marketing</label>
+            <input type="checkbox" name="interesses3" value="2" id="41" />
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="Formulario_-_Radio">
+        <header>
+          <h3>Formulario - Radio</h3>
+        </header>
+        <article>
+          <p>
+            O input do tipo <i>radio</i> tem a mesma função do <i>checkbox</i>.
+            Porém só é permitido marcar apenas uma opção. O exemplo de um código
+            <i>radio</i> seria:
+          </p>
+          <div id="ex_radio">
+            <code>
+              <pre>
+            &lt;legend&gt;Interesses de Estudo 2&lt;/legend&gt; 
+            &lt;label for="vendas">Vendas&lt;/label&gt; 
+            &lt;input type="radio" name="interesses3" value="1" id="vendas"&gt; 
+            &lt;label for="marketing">Marketing&lt;/label&gt; 
+            &lt;input type="radio" name="interesses3" value="2" id="marketing"&gt;
+          </pre
+              >
+            </code>
+          </div>
+          <p>O código a cima, ficaria dessa forma no Browser:</p>
+          <div id="ex_code-radio">
+            <legend>Interesses de Estudo</legend>
+            <label for="campo31">Vendas</label>
+            <input type="radio" name="interesses2" value="1" id="campo31" />
+            <label for="campo32">Marketing</label>
+            <input type="radio" name="interesses2" value="2" id="campo32" />
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

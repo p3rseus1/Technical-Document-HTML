@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(238, 237, 237);
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+  height: 100%;
+  border-right: 2px solid rgb(48, 48, 48);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#navbar header {
+  text-align: center;
+  padding: 1rem;
+}
+
+#navbar ul {
+  height: 80%;
+  display: block;
+  list-style: none;
+  overflow: auto;
+}
+
+#navbar ul li {
+  padding: 1rem 1rem;
+  border-top: 1.5px solid gray;
+  width: 100%;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+}
+
+#main-doc {
+  position: static;
+  width: 100%;
+  margin: 0 2rem 2rem 22rem;
+  word-break: break-all !important;
+}
+
+#main-doc section {
+  margin: 1.5rem 0;
+}
+
+#main-doc header {
+  margin: 1rem 0;
+}
+
+#main-doc h3 {
+  font-size: 1.7rem;
+}
+
+#main-doc article {
+  margin: 0rem 1.5rem;
+  line-height: 1.5rem;
+}
+
+#main-doc article p {
+  margin: 1rem 0;
+}
+
+#main-doc article ul {
+  margin: 0 2rem;
+}
+
+#main-doc article div {
+  background: rgb(180, 180, 180);
+  border-radius: 2px;
+  text-align: left;
+  padding: 1rem;
+}
+
+#imagem_html {
+  width: 100%;
+  height: auto;
+}
+
+/*------Regras para corrigir o tamanho dos títulos-----------*/
+
+#ex_h-tag h1 {
+  font-size: 2rem;
+}
+
+#ex_h-tag h3 {
+  font-size: 1.25rem !important;
+}
+
+/*-----------------------------------------------------------*/
+
+@media (max-width: 1049px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: absolute;
+    overflow: auto;
+    height: 38%;
+    width: 100%;
+    top: 0;
+    border-right: none;
+    background: rgb(238, 237, 237);
+  }
+
+  #navbar ul {
+    border-bottom: 2px solid rgb(34, 34, 34);
+    border-top: 2px solid rgb(34, 34, 34);
+  }
+
+  #main-doc {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22rem !important;
+    margin: 0 1rem;
+    text-align: left;
+  }
+}
